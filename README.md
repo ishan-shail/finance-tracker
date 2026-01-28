@@ -68,5 +68,6 @@ This project solves that problem by providing an interactive finance tracker tha
 ---
 
 ## Author
-**[Your Name]**  
+Ishan Shail 
 Web Dev II – Batch 2029
+
