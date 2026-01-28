@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Finance Manager</h1>
+    <p>Track income, expenses & balance</p>
+  </header>
+
+  <section class="form-section">
+    <form id="form">
+      <input id="desc" type="text" placeholder="Description">
+      <input id="amount" type="number" placeholder="Amount">
+
+      <select id="type">
+        <option value="">Type</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <select id="category">
+        <option value="">Category</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Rent</option>
+        <option>Education</option>
+        <option>Other</option>
+      </select>
+
+      <button>Add Transaction</button>
+    </form>
+    <p class="error" id="error"></p>
+  </section>
+
+  <section class="summary">
+    <div class="card income">Income ₹<span id="income">0</span></div>
+    <div class="card expense">Expense ₹<span id="expense">0</span></div>
+    <div class="card balance">Balance ₹<span id="balance">0</span></div>
+  </section>
+
+  <section class="controls">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="income">Income</button>
+    <button data-filter="expense">Expense</button>
+  </section>
+
+  <ul id="list"></ul>
+  <div id="empty">No transactions yet</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
