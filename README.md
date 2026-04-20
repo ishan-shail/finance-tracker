@@ -1,1 +1,1 @@
-# finance-tracker
+# finance-analytics-app
